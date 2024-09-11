@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="Images/1.jpg" alt="1" />
+          <h1>click!</h1>
+          <div class="details">
+            <h2>loki</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/2.jpg" alt="2" />
+          <h1>click!</h1>
+          <div class="details">
+            <h2>spider man</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/3.jpg" alt="3" />
+          <h1>click!</h1>
+          <div class="details">
+            <h2>logan</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="Images/4.jpg" alt="4" />
+          <h1>click!</h1>
+          <div class="details">
+            <h2>bat man</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/5.jpg" alt="5" />
+          <h1>click!</h1>
+          <div class="details">
+            <h2>iron man</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/6.jpg" alt="6" />
+          <h1>click!</h1>
+          <div class="details">
+            <h2>dr strange</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/7.jpg" alt="7" />
+          <h1>click!</h1>
+          <div class="details">
+            <h2>thor</h2>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
